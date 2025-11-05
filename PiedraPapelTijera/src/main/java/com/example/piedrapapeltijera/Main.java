@@ -37,9 +37,9 @@ public class Main extends Application {
         int num = random.nextInt(3); // opción aletoria de cpu
         String cpu;
 
-        if () {
+        if (num == 1) {
             cpu = "Piedra";
-        } else if () {
+        } else if (num == 2) {
             cpu = "Papel";
         } else {
             cpu = "Tijera";
@@ -48,13 +48,13 @@ public class Main extends Application {
         String resultado; //stringf vacio donde se guarda el resultado futuro
 
         //comparaciones de victoria, empate o derrota
-        if () {
+        if (cpu == opcionJugador) {
             resultado = "Empate";
-        } else if () {
+        } else if (opcionJugador.equals("Piedra") && cpu.equals("Tijera")) {
             resultado = "Ganaste";
-        } else if () {
+        } else if (opcionJugador.equals("Papel") && cpu.equals("Piedra")) {
             resultado = "Ganaste";
-        } else if () {
+        } else if (opcionJugador.equals("Tijera") && cpu.equals("Papel")) {
             resultado = "Ganaste";
         } else {
             resultado = "Perdiste";
